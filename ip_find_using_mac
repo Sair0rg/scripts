@@ -1,3 +1,0 @@
-IP FINDINF USING MAC ID
-
-sudo arp-scan -l | grep "MAC_ID"
